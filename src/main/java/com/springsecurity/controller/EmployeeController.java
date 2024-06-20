@@ -50,7 +50,7 @@ public class EmployeeController {
 		if (authentication.isAuthenticated()) {
 			return jwtService.generateToken(authRequest.getUserName());
 		} else {
-			throw new UsernameNotFoundException("Sorry Authentication failed !!");
+			throw new UsernameNotFoundException("Sorry Authentication failed and u need to authenticate !!");
 		}
 	}
 	
